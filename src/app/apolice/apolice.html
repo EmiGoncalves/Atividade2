@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nome do Segurado:</label>
+        <input type="nome" class="form-control" id="exampleInputEmail1">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Sexo:</label>
+        <input type="nome" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Idade:</label>
+        <input type="nome" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Valor do Automovel:</label>
+        <input type="nome" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="col-12">
+        <button class="btn btn-primary mt-2" (click)="calcularApolice()">Calcular</button>
+    </div>
+    <div class="col-12">
+        <label class="fl=orm-label">Resultado</label>
+        <input type="number" class="form-control" [ngModel]="calcularApolice()" readonly>
+    </div>
+
+</div>
